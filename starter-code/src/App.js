@@ -12,8 +12,7 @@ class App extends Component {
   };
 
   addFoodButtonHandler = (food) => {
-    const newFoodsList = [...this.state.foods];
-    newFoodsList.push(food);
+    const newFoodsList = [...this.state.foods, food];
     this.setState({
       foods: newFoodsList,
     });
